@@ -1073,6 +1073,7 @@ Public Class TVA_Method
 
         CheckRecursion = Sub(MyGeoSet As HybridBody)
 
+
                              ' CATIA = MyGeoSet.Application
 
 
@@ -1087,8 +1088,6 @@ Public Class TVA_Method
 
                                  '紧固件列表
                                  fastenerqty.Add(0, MyGeoSet.Name)
-
-
 
                                  Dim i
                                  '开始遍历紧固件的下层几何图形集

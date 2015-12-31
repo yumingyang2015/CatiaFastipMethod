@@ -5,11 +5,11 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{A761EF80-FF77-41EF-85E0-A8FFBAC96AE2}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <OutputType>WinExe</OutputType>
     <RootNamespace>CATIA_method</RootNamespace>
     <AssemblyName>CATIA_method</AssemblyName>
     <FileAlignment>512</FileAlignment>
-    <MyType>Windows</MyType>
+    <MyType>WindowsFormsWithCustomSubMain</MyType>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -41,6 +41,9 @@
   </PropertyGroup>
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>CATIA_method.MainTools</StartupObject>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Interop.CENAttributeAccess">
@@ -109,6 +112,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
@@ -195,11 +199,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\GoumangToolKit\goumangToolKit\GoumangToolKit.csproj">
+    <ProjectReference Include="..\GoumangToolKit\goumangToolKit\GoumangToolKit.csproj">
       <Project>{41f56599-8d65-48b1-ac56-99e8d146bc2d}</Project>
       <Name>GoumangToolKit</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\GoumangToolKit\OfficeMethod\OfficeMethod.vbproj">
+    <ProjectReference Include="..\GoumangToolKit\OfficeMethod\OfficeMethod.vbproj">
       <Project>{78d7e043-4963-44c0-9631-9e9549eafe91}</Project>
       <Name>OfficeMethod</Name>
     </ProjectReference>

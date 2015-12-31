@@ -4,7 +4,7 @@ Imports MECMOD
 Imports INFITF
 
 Imports GoumangToolKit
-Imports OFFICE_Method
+Imports OfficeMethod
 Imports HybridShapeTypeLib
 Imports System.Threading
 
